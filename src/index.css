@@ -1,3 +1,17 @@
-body {
+:root {
+  --color-one: #64e4ec;
+
+  --font-one: 'Gugi', sans-serif;
+  --font-two: 'Homenaje', sans-serif;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
 }
