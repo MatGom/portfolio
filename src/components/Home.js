@@ -1,5 +1,7 @@
 import styles from './Home.module.css';
+
 import headerImage from '../images/header.svg';
+
 const Home = () => {
   return (
     <header className={styles.header}>

@@ -1,7 +1,8 @@
+import styles from './About.module.css';
+
 import AboutCard from './AboutCard';
 import { cards } from '../db/cards';
 
-import styles from './About.module.css';
 
 const About = () => {
   return (
