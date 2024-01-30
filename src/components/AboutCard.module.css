@@ -1,6 +1,7 @@
 .aboutCard {
   width: 300px;
   height: 640px;
+  margin-top: 50px;
 }
 
 .image {
@@ -8,6 +9,7 @@
 }
 
 .frame {
+  transform: translateY(-20px);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -25,7 +27,6 @@
 
 .body {
   border: 2px solid rgba(83, 121, 246, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .info {
@@ -38,3 +39,137 @@
 .info svg {
   margin-right: 16px;
 }
+
+@media (max-width: 1080px) {
+  .aboutCard {
+    width: 250px;
+  }
+
+  .image {
+    width: 250px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .info {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 920px) {
+  .aboutCard {
+    width: 200px;
+    height: 500px;
+  }
+
+  .image {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .info {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 740px) {
+  .aboutCard {
+    width: 160px;
+    height: 420px;
+  }
+
+  .image {
+    width: 160px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 570px) {
+  .aboutCard {
+    width: 120px;
+    height: 360px;
+  }
+
+  .image {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutCard {
+    width: 300px;
+    height: 580px;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .info {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  .aboutCard {
+    width: 260px;
+    height: 540px;
+  }
+
+  .image {
+    width: 260px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .info {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutCard {
+    width: 200px;
+    height: 480px;
+  }
+
+  .image {
+    width: 200px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .info {
+    font-size: 22px;
+  }
+}
+
+

@@ -18,3 +18,72 @@
   color: var(--color-two);
   font-size: 32px;
 }
+
+@media (max-width: 1250px) {
+  .about {
+    width: 90%;
+  }
+
+  .aboutMeText {
+    padding: 40px 160px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .aboutMeText {
+    padding: 40px 160px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 920px) {
+  .aboutMeText {
+    padding: 30px 100px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 740px) {
+  .aboutMeText {
+    padding: 30px 60px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .aboutMeText {
+    padding: 30px 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutMeText {
+    margin-top: 50px;
+    padding: 30px 50px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .aboutMeText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutMeText {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
