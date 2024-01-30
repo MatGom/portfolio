@@ -12,6 +12,10 @@ export const projects = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
+    backDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
+    link: 'http://google.com',
+    githubLink: 'http://github.com',
   },
   {
     id: 'project2',
@@ -22,6 +26,10 @@ export const projects = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
+    backDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
+    link: 'http://google.com',
+    githubLink: 'http://github.com',
   },
   {
     id: 'project3',
@@ -32,6 +40,10 @@ export const projects = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
+    backDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
+    link: 'http://google.com',
+    githubLink: 'http://github.com',
   },
   {
     id: 'project4',
@@ -42,5 +54,9 @@ export const projects = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
+    backDescription:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet commodo. Aenean sollicitudin tortor metus.',
+    link: 'http://google.com',
+    githubLink: 'http://github.com',
   },
 ];

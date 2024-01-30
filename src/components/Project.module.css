@@ -9,8 +9,23 @@
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 2;
+}
+
+.projectContent {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.projectBack {
+  flex-direction: row-reverse;
+}
+
+.projectHidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .project:nth-child(odd) {
@@ -29,7 +44,7 @@
   border: 3px solid var(--color-four);
   border-radius: 5px;
   z-index: -1;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .project:nth-child(odd)::after {
@@ -55,6 +70,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.projectInfoBack {
+  width: 80%;
 }
 
 .projectTitle {
@@ -97,6 +116,7 @@
   color: var(--color-four);
   font-family: var(--font-two);
   font-size: 32px;
+  text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -107,6 +127,10 @@
 
 .projectArrow {
   align-self: center;
+}
+
+.projectArrowBack {
+  transform: rotate(180deg);
 }
 
 .projectArrow svg {
