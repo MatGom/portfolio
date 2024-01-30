@@ -1,3 +1,26 @@
 .projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--color-three);
+}
+
+.projectsWrapper {
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 70px 0;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  font-family: var(--font-one);
+  background: var(--gradient-color-one);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }

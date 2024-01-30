@@ -1,0 +1,125 @@
+.project {
+  position: relative;
+  padding: 30px;
+  margin: 70px 0;
+  width: 95%;
+  height: 430px;
+  background: var(--color-four);
+  border: 3px solid var(--color-four);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.project::after {
+  content: '';
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(3deg) translateX(10px);
+  background: transparent;
+  border: 3px solid var(--color-four);
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.project:nth-child(odd)::after {
+  transform: rotate(-3deg) translateX(10px);
+}
+
+.project:hover.project::after {
+  width: 100%;
+  transform: rotate(0) translateX(0) scale(1.02);
+  border-radius: 10px;
+  background: var(--color-four);
+}
+
+.projectImage {
+  width: 305px;
+  height: 370px;
+  border: 2px solid rgba(254, 254, 255, 0);
+  background: #d9d9d9;
+}
+
+.projectInfo {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectTitle {
+  color: var(--color-five);
+  font-family: var(--font-one);
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.projectDescription {
+  color: var(--color-two);
+  font-family: var(--font-two);
+  font-size: 32px;
+}
+
+.projectButtonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectButtonsWrapper svg {
+  font-size: 48px;
+  color: var(--color-five);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projectButtonsWrapper svg:hover {
+  color: var(--color-two);
+}
+
+.projectButton {
+  margin: 0 30px;
+  padding: 5px 15px;
+  background: var(--color-five);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-four);
+  font-family: var(--font-two);
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projectButton:hover {
+  background: var(--color-two);
+}
+
+.projectArrow {
+  align-self: center;
+}
+
+.projectArrow svg {
+  font-size: 30px;
+  color: var(--color-five);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projectArrow svg:hover {
+  color: var(--color-two);
+}
+
+.project:nth-child(odd) .projectArrow svg {
+  transform: rotate(180deg);
+}

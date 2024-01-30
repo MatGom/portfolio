@@ -9,7 +9,7 @@ const Project = ({ image, imageDescription, title, description, linkIcon, arrowI
       <div className={styles.projectInfo}>
         <h3 className={styles.projectTitle}>{title}</h3>
         <p className={styles.projectDescription}>{description}</p>
-        <div className={styles.projectButtonWrappers}>
+        <div className={styles.projectButtonsWrapper}>
           <button className={styles.projectButton}>visit website</button>
           {linkIcon}
         </div>
