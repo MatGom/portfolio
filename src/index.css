@@ -1,5 +1,8 @@
 :root {
   --color-one: #64e4ec;
+  --color-two: #241233;
+  --color-three: #23192a;
+  --color-four: #fff;
 
   --font-one: 'Gugi', sans-serif;
   --font-two: 'Homenaje', sans-serif;
@@ -9,6 +12,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .container {

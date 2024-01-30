@@ -6,15 +6,17 @@ import styles from './About.module.css';
 const About = () => {
   return (
     <section className={styles.about}>
-      {cards.map(card => (
-        <AboutCard
-          key={card.id}
-          image={card.image}
-          imageDescription={card.imageDescription}
-          title={card.title}
-          infos={card.infos}
-        />
-      ))}
+      <div className={styles.wrapper}>
+        {cards.map(card => (
+          <AboutCard
+            key={card.id}
+            image={card.image}
+            imageDescription={card.imageDescription}
+            title={card.title}
+            infos={card.infos}
+          />
+        ))}
+      </div>
       <div className={styles.aboutMe}>
         <p className={styles.aboutMeText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam
