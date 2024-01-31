@@ -76,7 +76,7 @@
 .wrapper button {
   width: 30%;
   margin: 10px;
-  padding: 5px 15px;
+  padding: 5px;
   background: var(--color-five);
   border: 3px solid var(--color-five);
   border-radius: 7px;
@@ -89,4 +89,80 @@
 .wrapper button:hover {
   background: transparent;
   color: var(--color-five);
+}
+
+@media (max-width: 990px) {
+  .title {
+    margin: 60px 0;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 830px) {
+  .contact {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .title {
+    margin: 60px 0;
+    font-size: 42px;
+  }
+
+  .wrapper input,
+  .wrapper textarea {
+    font-size: 18px;
+  }
+
+  .wrapper button {
+    padding: 3px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 510px) {
+  .wrapper input,
+  .wrapper textarea {
+    font-size: 16px;
+  }
+
+  .wrapper button {
+    padding: 3px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 380px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .wrapper input {
+    height: 40px;
+  }
+
+  .wrapper textarea {
+    min-height: 180px;
+  }
+
+  .wrapper input,
+  .wrapper textarea {
+    font-size: 15px;
+  }
+
+  .wrapper button {
+    padding: 3px;
+    font-size: 20px;
+  }
 }
