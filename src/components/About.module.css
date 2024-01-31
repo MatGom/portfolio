@@ -9,7 +9,7 @@
 }
 
 .aboutMe {
-  background: #efefef;
+  background: var(--color-six);
 }
 
 .aboutMeText {
