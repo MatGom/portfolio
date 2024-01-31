@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   transition: opacity 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .projectBack {
@@ -147,3 +148,347 @@
 .project:nth-child(odd) .projectArrow svg {
   transform: rotate(180deg);
 }
+
+@media (max-width: 1090px) {
+  .projectDescription {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 990px) {
+  .project {
+    margin: 60px 0;
+    width: 90%;
+    height: 400px;
+  }
+
+  .project::after {
+    width: 95%;
+    transform: rotate(3deg) translateX(10px);
+  }
+
+  .projectImage {
+    width: 275px;
+    height: 340px;
+  }
+
+  .projectTitle {
+    font-size: 22px;
+  }
+
+  .projectDescription {
+    font-size: 24px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 40px;
+  }
+
+  .projectButton {
+    padding: 4px 15px;
+    font-size: 28px;
+  }
+
+  .projectArrow svg {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 890px) {
+  .project {
+    height: 360px;
+  }
+
+  .projectImage {
+    width: 235px;
+    height: 300px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+  }
+
+  .projectDescription {
+    font-size: 22px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 36px;
+  }
+
+  .projectButton {
+    font-size: 24px;
+  }
+
+  .projectArrow svg {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 830px) {
+  .project {
+    height: 320px;
+    margin: 30px 0;
+  }
+
+  .projectImage {
+    width: 195px;
+    height: 260px;
+  }
+
+  .projectTitle {
+    font-size: 18px;
+  }
+
+  .projectDescription {
+    font-size: 20px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 34px;
+  }
+
+  .projectButton {
+    font-size: 22px;
+  }
+
+  .projectArrow svg {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 730px) {
+  .project {
+    height: 300px;
+  }
+
+  .projectImage {
+    width: 175px;
+    height: 240px;
+  }
+
+  .projectTitle {
+    font-size: 16px;
+  }
+
+  .projectDescription {
+    font-size: 18px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 32px;
+  }
+
+  .projectButton {
+    font-size: 20px;
+  }
+
+  .projectArrow svg {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  .project {
+    height: 660px;
+    width: 70%;
+  }
+
+  .project:nth-child(odd) .projectArrow svg {
+    transform: rotate(90deg);
+  }
+
+  .projectContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectImage {
+    width: 90%;
+    height: 40%;
+  }
+
+  .projectInfo {
+    width: 90%;
+    height: 50%;
+    align-items: center;
+  }
+
+  .projectTitle {
+    font-size: 18px;
+  }
+
+  .projectDescription {
+    font-size: 20px;
+  }
+
+  .projectButtonsWrapper {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 30px;
+  }
+
+  .projectButton {
+    margin: 0;
+    margin-right: 30px;
+    font-size: 18px;
+  }
+
+  .projectArrow svg {
+    transform: rotate(90deg);
+    font-size: 18px;
+  }
+
+  .projectBack {
+    flex-direction: column-reverse;
+  }
+
+  .projectBack .projectTitle {
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 510px) {
+  .project {
+    height: 600px;
+  }
+
+  .projectImage {
+    height: 35%;
+  }
+
+  .projectInfo {
+    height: 55%;
+  }
+
+  .projectTitle {
+    font-size: 16px;
+  }
+
+  .projectDescription {
+    font-size: 18px;
+  }
+
+  .projectButtonsWrapper {
+    justify-content: space-between;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 29px;
+  }
+
+  .projectButton {
+    margin: 0;
+    margin-right: 30px;
+    font-size: 17px;
+  }
+
+  .projectArrow svg {
+    transform: rotate(90deg);
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .projectImage {
+    height: 30%;
+  }
+
+  .projectInfo {
+    height: 60%;
+  }
+
+  .projectTitle {
+    font-size: 15px;
+  }
+
+  .projectDescription {
+    font-size: 17px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 28px;
+  }
+
+  .projectButton {
+    font-size: 17px;
+  }
+
+  .projectArrow svg {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .project {
+    height: 580px;
+    width: 80%;
+  }
+
+  .projectImage {
+    height: 25%;
+  }
+
+  .projectInfo {
+    height: 65%;
+  }
+
+  .projectTitle {
+    font-size: 14px;
+  }
+
+  .projectDescription {
+    font-size: 16px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 27px;
+  }
+
+  .projectButton {
+    font-size: 16px;
+  }
+
+  .projectArrow svg {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 315px) {
+  .project {
+    height: 560px;
+    width: 80%;
+  }
+
+  .projectImage {
+    height: 20%;
+  }
+
+  .projectInfo {
+    height: 70%;
+  }
+
+  .projectTitle {
+    font-size: 14px;
+  }
+
+  .projectDescription {
+    font-size: 14px;
+  }
+
+  .projectButtonsWrapper svg {
+    font-size: 25px;
+  }
+
+  .projectButton {
+    font-size: 14px;
+  }
+
+  .projectArrow svg {
+    font-size: 13px;
+  }
+}
+
