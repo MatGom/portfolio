@@ -29,8 +29,12 @@
   pointer-events: none;
 }
 
-.project:nth-child(odd) {
+.project:nth-child(odd) .projectContent {
   flex-direction: row-reverse;
+}
+
+.project:nth-child(odd) .projectBack {
+  flex-direction: row;
 }
 
 .project::after {
@@ -74,7 +78,7 @@
 }
 
 .projectInfoBack {
-  width: 80%;
+  width: 90%;
 }
 
 .projectTitle {
@@ -298,8 +302,18 @@
     transform: rotate(90deg);
   }
 
-  .projectContent {
+  .project .projectContent {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .project:nth-child(odd) .projectContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project .projectContent.projectBack {
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -340,10 +354,6 @@
   .projectArrow svg {
     transform: rotate(90deg);
     font-size: 18px;
-  }
-
-  .projectBack {
-    flex-direction: column-reverse;
   }
 
   .projectBack .projectTitle {
