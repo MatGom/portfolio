@@ -1,0 +1,71 @@
+.navigation {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--color-four);
+  border-bottom: 2px solid var(--color-three);
+  box-shadow: 0 0 5px 0 var(--color-three);
+  z-index: 3;
+}
+
+.navList {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--font-one);
+  color: var(--color-two);
+  text-transform: uppercase;
+  font-size: 24px;
+  list-style: none;
+}
+
+.listItem {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.listItem:hover {
+  background: linear-gradient(180deg, var(--color-two) 44%, #64e4ec 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.listItem::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+  z-index: 4;
+}
+
+.listItem:hover.listItem::after {
+  background: linear-gradient(
+    to right,
+    var(--color-three) 0%,
+    var(--color-three) 15%,
+    var(--color-one) 40%,
+    var(--color-one) 50%,
+    var(--color-one) 60%,
+    var(--color-three) 85%,
+    var(--color-three) 100%
+  );
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}

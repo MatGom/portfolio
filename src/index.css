@@ -5,8 +5,9 @@
   --color-four: #fff;
   --color-five: #8882e7;
   --color-six: #efefef;
+  --color-seven: #502eb0;
 
-  --gradient-color-one: linear-gradient(180deg, #502eb0 4.37%, #8882e7 31.96%, #64e4ec 60.98%);
+  --gradient-color-one: linear-gradient(180deg, var(--color-seven) 4.37%, #8882e7 31.96%, #64e4ec 60.98%);
 
   --font-one: 'Gugi', sans-serif;
   --font-two: 'Homenaje', sans-serif;
