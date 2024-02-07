@@ -1,0 +1,51 @@
+.notFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-three);
+}
+
+.container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container p {
+  font-family: var(--font-one);
+  background: linear-gradient(#502eb0 22.02%, var(--color-one) 44.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.container p:nth-child(1) {
+  font-size: 56px;
+}
+
+.container p:nth-child(2) {
+  font-size: 42px;
+}
+
+.container p:nth-child(3) {
+  font-size: 16px;
+}
+
+@media (max-width: 400px) {
+  .container p:nth-child(1) {
+    font-size: 42px;
+  }
+  
+  .container p:nth-child(2) {
+    font-size: 30px;
+  }
+
+  .container p:nth-child(3) {
+    font-size: 12px;
+  }
+}
