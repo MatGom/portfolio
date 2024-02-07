@@ -1,12 +1,13 @@
+import { forwardRef } from 'react';
+
 import styles from './About.module.css';
 
 import AboutCard from './AboutCard';
 import { cards } from '../db/cards';
 
-
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
-    <section className={styles.about}>
+    <section ref={ref} className={styles.about}>
       <div className={styles.wrapper}>
         {cards.map(card => (
           <AboutCard
@@ -28,6 +29,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

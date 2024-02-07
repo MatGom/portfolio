@@ -3,7 +3,7 @@ import { ReactComponent as Logo } from '../images/logo_black_lines.svg';
 
 import { useState } from 'react';
 
-const MainNavigation = () => {
+const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   let navClasses;
@@ -20,6 +20,11 @@ const MainNavigation = () => {
     burgerNavigationClasses = `${styles.burgerNavigation}`;
   }
 
+  const goToSectionHandler = ref => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+    setMenuIsOpen(!menuIsOpen);
+  };
+
   const toggleMenuHandler = () => {
     setMenuIsOpen(!menuIsOpen);
   };
@@ -28,10 +33,18 @@ const MainNavigation = () => {
     <>
       <nav className={navClasses}>
         <ul className={styles.navList}>
-          <li className={styles.listItem}>Home</li>
-          <li className={styles.listItem}>About</li>
-          <li className={styles.listItem}>Projects</li>
-          <li className={styles.listItem}>Contact</li>
+          <li className={styles.listItem} onClick={() => goToSectionHandler(homeRef)}>
+            Home
+          </li>
+          <li className={styles.listItem} onClick={() => goToSectionHandler(aboutRef)}>
+            About
+          </li>
+          <li className={styles.listItem} onClick={() => goToSectionHandler(projectsRef)}>
+            Projects
+          </li>
+          <li className={styles.listItem} onClick={() => goToSectionHandler(contactRef)}>
+            Contact
+          </li>
           <li className={`${styles.listItem} ${styles.logoContainer}`}>
             <Logo className={styles.logo} />
           </li>

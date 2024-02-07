@@ -2,10 +2,11 @@ import styles from './Projects.module.css';
 
 import Project from './Project';
 import { projects } from '../db/projects';
+import { forwardRef } from 'react';
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
   return (
-    <section className={styles.projects}>
+    <section ref={ref} className={styles.projects}>
       <div className={styles.projectsWrapper}>
         <h2 className={styles.title}>Projects</h2>
         {projects.map(project => (
@@ -25,6 +26,6 @@ const Projects = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Projects;

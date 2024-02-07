@@ -1,10 +1,12 @@
+import { forwardRef } from 'react';
+
 import styles from './Home.module.css';
 
 import headerImage from '../images/header.svg';
 
-const Home = () => {
+const Home = forwardRef((props, ref) => {
   return (
-    <header className={styles.header}>
+    <header ref={ref} className={styles.header}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.subtitles}>
@@ -24,6 +26,6 @@ const Home = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Home;
