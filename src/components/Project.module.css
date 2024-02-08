@@ -151,11 +151,22 @@
 }
 
 @keyframes arrowBounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
   50% {
     transform: translateX(3px);
+  }
+}
+
+@keyframes oddArrowBounce {
+  0%,
+  100% {
+    transform: translateX(0) rotate(180deg);
+  }
+  50% {
+    transform: translateX(3px) rotate(180deg);
   }
 }
 
@@ -173,6 +184,7 @@
 
 .project:nth-child(odd) .projectArrow svg {
   transform: rotate(180deg);
+  animation: oddArrowBounce 1.2s ease-in-out infinite;
 }
 
 @media (max-width: 1080px) {
@@ -301,7 +313,18 @@
 
 @media (max-width: 660px) {
   @keyframes arrowBounce {
-    0%, 100% {
+    0%,
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+    50% {
+      transform: translateY(3px) rotate(90deg);
+    }
+  }
+
+  @keyframes oddArrowBounce {
+    0%,
+    100% {
       transform: translateY(0) rotate(90deg);
     }
     50% {
