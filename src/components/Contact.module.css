@@ -46,7 +46,7 @@
   padding: 10px;
   font-size: 20px;
   border-radius: 7px;
-  border: 3px solid var(--color-three);
+  border: none;
   background: var(--color-six);
   color: var(--color-three);
   outline: none;
@@ -54,7 +54,7 @@
 
 .wrapper input:focus,
 .wrapper textarea:focus {
-  border: 3px solid var(--color-five);
+  box-shadow: 0 0 3px 3px var(--color-five);
   background: var(--color-four);
 }
 
@@ -86,12 +86,15 @@
   transition: 0.3s;
 }
 
+.wrapper button:focus,
 .wrapper button:hover {
-  background: transparent;
+  background: var(--color-three);
+  border: 3px solid var(--color-three);
+  box-shadow: 0 0 3px 3px var(--color-five);
   color: var(--color-five);
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1230px) {
   .contact {
     width: 100%;
   }
@@ -99,23 +102,17 @@
 
 @media (max-width: 990px) {
   .title {
-    margin: 60px 0;
     font-size: 48px;
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 990px) {
   .form {
     width: 100%;
   }
 }
 
-@media (max-width: 660px) {
-  .title {
-    margin: 60px 0;
-    font-size: 42px;
-  }
-
+@media (max-width: 790px) {
   .wrapper input,
   .wrapper textarea {
     font-size: 18px;
@@ -127,12 +124,19 @@
   }
 }
 
-@media (max-width: 510px) {
-  .wrapper input,
-  .wrapper textarea {
-    font-size: 16px;
+@media (max-width: 660px) {
+  .title {
+    font-size: 42px;
   }
+}
 
+@media (max-width: 590px) {
+  .wrapper {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 510px) {
   .wrapper button {
     padding: 3px;
     font-size: 22px;
@@ -160,7 +164,7 @@
 
   .wrapper input,
   .wrapper textarea {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .wrapper button {

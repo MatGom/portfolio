@@ -1,9 +1,10 @@
 .project {
   position: relative;
-  padding: 30px;
-  margin: 70px 0;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 100px;
   width: 95%;
-  height: 430px;
+  min-height: 430px;
   background: var(--color-four);
   border: 3px solid var(--color-four);
   border-radius: 10px;
@@ -17,7 +18,6 @@
   display: flex;
   justify-content: space-between;
   transition: opacity 0.4s ease-in-out;
-  overflow: hidden;
 }
 
 .projectBack {
@@ -64,21 +64,33 @@
 }
 
 .projectImage {
-  width: 305px;
-  height: 370px;
-  border: 2px solid rgba(254, 254, 255, 0);
-  background: #d9d9d9;
+  height: 350px;
+  width: 25%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.projectImage img {
+  width: 100%;
 }
 
 .projectInfo {
-  width: 55%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .projectInfoBack {
+  display: flex;
+  justify-content: start;
   width: 90%;
+}
+
+.projectInfoBack .projectTitle {
+  margin-bottom: 20px;
 }
 
 .projectTitle {
@@ -131,7 +143,7 @@
 }
 
 .projectArrow {
-  align-self: center;
+  align-self: start;
 }
 
 .projectArrowBack {
@@ -153,7 +165,11 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1080px) {
+  .projectTitle {
+    font-size: 24px;
+  }
+
   .projectDescription {
     font-size: 28px;
   }
@@ -161,9 +177,7 @@
 
 @media (max-width: 990px) {
   .project {
-    margin: 60px 0;
-    width: 90%;
-    height: 400px;
+    min-height: 400px;
   }
 
   .project::after {
@@ -172,16 +186,15 @@
   }
 
   .projectImage {
-    width: 275px;
-    height: 340px;
+    height: 320px;
   }
 
   .projectTitle {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .projectDescription {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .projectButtonsWrapper svg {
@@ -200,16 +213,11 @@
 
 @media (max-width: 890px) {
   .project {
-    height: 360px;
+    min-height: 360px;
   }
 
   .projectImage {
-    width: 235px;
     height: 300px;
-  }
-
-  .projectTitle {
-    font-size: 20px;
   }
 
   .projectDescription {
@@ -231,21 +239,11 @@
 
 @media (max-width: 830px) {
   .project {
-    height: 320px;
-    margin: 30px 0;
+    min-height: 320px;
   }
 
   .projectImage {
-    width: 195px;
     height: 260px;
-  }
-
-  .projectTitle {
-    font-size: 18px;
-  }
-
-  .projectDescription {
-    font-size: 20px;
   }
 
   .projectButtonsWrapper svg {
@@ -261,22 +259,21 @@
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 790px) {
   .project {
-    height: 300px;
+    min-height: 300px;
   }
 
   .projectImage {
-    width: 175px;
     height: 240px;
   }
 
   .projectTitle {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .projectDescription {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .projectButtonsWrapper svg {
@@ -293,17 +290,13 @@
 }
 
 @media (max-width: 660px) {
-  .project {
-    height: 660px;
-    width: 70%;
-  }
-
   .project:nth-child(odd) .projectArrow svg {
     transform: rotate(90deg);
   }
 
   .project .projectContent {
-    flex-direction: column;
+    height: 100%;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -313,26 +306,70 @@
   }
 
   .project .projectContent.projectBack {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
+    justify-content: start;
+  }
+
+  .project .projectContent.projectBack .projectInfo {
+    height: 100%;
+    padding: 0;
+    justify-content: start;
+  }
+
+  .project .projectContent.projectBack .projectTitle {
+    margin-bottom: 10px;
+  }
+
+  .project .projectContent.projectBack .projectDescription {
+    margin-top: 20px;
   }
 
   .projectImage {
+    order: 2;
+    height: 270px;
     width: 90%;
-    height: 40%;
+  }
+
+  .project:nth-child(odd) .projectImage {
+    order: 2;
   }
 
   .projectInfo {
+    order: 1;
+    padding-top: 40px;
+    padding-bottom: 20px;
     width: 90%;
-    height: 50%;
     align-items: center;
   }
 
+  .project:nth-child(odd) .projectInfo {
+    order: 3;
+  }
+
+  .projectArrow {
+    order: 3;
+  }
+
+  .project:nth-child(odd) .projectArrow {
+    order: 1;
+  }
+
+  .projectBack .projectInfo {
+    order: 2;
+  }
+
+  .projectBack .projectArrow {
+    order: 1;
+  }
+
   .projectTitle {
+    margin-bottom: 20px;
     font-size: 18px;
   }
 
   .projectDescription {
+    padding-bottom: 70px;
     font-size: 20px;
   }
 
@@ -362,16 +399,31 @@
 }
 
 @media (max-width: 510px) {
-  .project {
-    height: 600px;
-  }
-
   .projectImage {
-    height: 35%;
+    height: 220px;
   }
 
   .projectInfo {
-    height: 55%;
+    padding-top: 30px;
+  }
+
+  .projectButtonsWrapper {
+    justify-content: space-between;
+  }
+
+  .projectButton {
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  .projectArrow svg {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .projectImage {
+    height: 200px;
   }
 
   .projectTitle {
@@ -379,11 +431,7 @@
   }
 
   .projectDescription {
-    font-size: 18px;
-  }
-
-  .projectButtonsWrapper {
-    justify-content: space-between;
+    font-size: 20px;
   }
 
   .projectButtonsWrapper svg {
@@ -391,67 +439,25 @@
   }
 
   .projectButton {
-    margin: 0;
-    margin-right: 30px;
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .projectArrow svg {
-    transform: rotate(90deg);
     font-size: 16px;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 300px) {
   .projectImage {
-    height: 30%;
-  }
-
-  .projectInfo {
-    height: 60%;
+    height: 140px;
   }
 
   .projectTitle {
-    font-size: 15px;
-  }
-
-  .projectDescription {
-    font-size: 17px;
-  }
-
-  .projectButtonsWrapper svg {
-    font-size: 28px;
-  }
-
-  .projectButton {
-    font-size: 17px;
-  }
-
-  .projectArrow svg {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 380px) {
-  .project {
-    height: 580px;
-    width: 80%;
-  }
-
-  .projectImage {
-    height: 25%;
-  }
-
-  .projectInfo {
-    height: 65%;
-  }
-
-  .projectTitle {
-    font-size: 14px;
-  }
-
-  .projectDescription {
     font-size: 16px;
+  }
+
+  .projectDescription {
+    font-size: 20px;
   }
 
   .projectButtonsWrapper svg {
@@ -463,42 +469,6 @@
   }
 
   .projectArrow svg {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
-
-@media (max-width: 315px) {
-  .project {
-    height: 560px;
-    width: 80%;
-  }
-
-  .projectImage {
-    height: 20%;
-  }
-
-  .projectInfo {
-    height: 70%;
-  }
-
-  .projectTitle {
-    font-size: 14px;
-  }
-
-  .projectDescription {
-    font-size: 14px;
-  }
-
-  .projectButtonsWrapper svg {
-    font-size: 25px;
-  }
-
-  .projectButton {
-    font-size: 14px;
-  }
-
-  .projectArrow svg {
-    font-size: 13px;
-  }
-}
-

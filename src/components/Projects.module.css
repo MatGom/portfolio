@@ -25,16 +25,20 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1250px) {
+  .projectsWrapper {
+    width: 90%;
+  }
+}
+
 @media (max-width: 990px) {
   .title {
-    margin: 60px 0;
     font-size: 48px;
   }
 }
 
 @media (max-width: 660px) {
   .title {
-    margin: 60px 0;
     font-size: 42px;
   }
 }

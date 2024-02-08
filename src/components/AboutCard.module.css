@@ -1,6 +1,6 @@
 .aboutCard {
   width: 300px;
-  height: 640px;
+  min-height: 640px;
   margin-top: 50px;
 }
 
@@ -40,13 +40,15 @@
   margin-right: 16px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1250px) {
   .aboutCard {
-    width: 250px;
+    width: 30%;
   }
+}
 
+@media (max-width: 1080px) {
   .image {
-    width: 250px;
+    width: 100%;
   }
 
   .title {
@@ -58,14 +60,9 @@
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 990px) {
   .aboutCard {
-    width: 200px;
-    height: 500px;
-  }
-
-  .image {
-    width: 200px;
+    min-height: 500px;
   }
 
   .title {
@@ -77,14 +74,9 @@
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 790px) {
   .aboutCard {
-    width: 160px;
-    height: 420px;
-  }
-
-  .image {
-    width: 160px;
+    min-height: 420px;
   }
 
   .title {
@@ -96,71 +88,15 @@
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 660px) {
   .aboutCard {
-    width: 120px;
-    height: 360px;
+    width: 48%;
+    min-height: 360px;
   }
 
-  .image {
-    width: 120px;
-  }
-
-  .title {
-    font-size: 10px;
-  }
-
-  .info {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 450px) {
-  .aboutCard {
-    width: 300px;
-    height: 580px;
-  }
-
-  .image {
-    width: 300px;
-  }
-
-  .title {
-    font-size: 28px;
-  }
-
-  .info {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 380px) {
-  .aboutCard {
-    width: 260px;
-    height: 540px;
-  }
-
-  .image {
-    width: 260px;
-  }
-
-  .title {
-    font-size: 24px;
-  }
-
-  .info {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 300px) {
-  .aboutCard {
-    width: 200px;
-    height: 480px;
-  }
-
-  .image {
-    width: 200px;
+  .aboutCard:nth-child(3) {
+    margin: 0 auto;
+    margin-top: 50px;
   }
 
   .title {
@@ -168,8 +104,34 @@
   }
 
   .info {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
+@media (max-width: 430px) {
+  .aboutCard:nth-child(3) {
+   width: 60%;
+  }
+}
 
+@media (max-width: 380px) {
+  .aboutCard, .aboutCard:nth-child(3) {
+    margin: 20px auto;
+    width: 90%;
+    min-height: 540px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutCard {
+    min-height: 480px;
+  }
+}
