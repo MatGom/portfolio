@@ -150,11 +150,21 @@
   transform: rotate(180deg);
 }
 
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
 .projectArrow svg {
   font-size: 30px;
   color: var(--color-five);
   cursor: pointer;
   transition: 0.3s;
+  animation: arrowBounce 1.2s ease-in-out infinite;
 }
 
 .projectArrow svg:hover {
@@ -290,6 +300,15 @@
 }
 
 @media (max-width: 660px) {
+  @keyframes arrowBounce {
+    0%, 100% {
+      transform: translateY(0) rotate(90deg);
+    }
+    50% {
+      transform: translateY(3px) rotate(90deg);
+    }
+  }
+
   .project:nth-child(odd) .projectArrow svg {
     transform: rotate(90deg);
   }
