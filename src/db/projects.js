@@ -47,7 +47,7 @@ export const projects = [
     id: 'project4',
     image: '',
     imageDescription: '',
-    title: 'Title4',
+    title: 'TBA',
     description: 'Coming soon...',
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
