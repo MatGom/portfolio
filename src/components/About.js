@@ -21,10 +21,7 @@ const About = forwardRef((props, ref) => {
       </div>
       <div className={styles.aboutMe}>
         <p className={styles.aboutMeText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor leo. Donec placerat nec quam
-          vitae congue. Quisque congue magna lorem, non consequat magna porttitor non. Curabitur faucibus lacinia magna
-          id scelerisque. Nam ante ligula, consequat semper aliquet eget, pharetra vel nisi. Donec auctor imperdiet
-          commodo. Aenean sollicitudin tortor metus.
+        Hello there! My name is Mateusz Gomolka, a passionate self-taught frontend developer. My journey into the world of web development has been fueled by a mix of self-directed learning, online courses, and bootcamps, each step deepening my love for coding. There's a unique joy I find in bringing ideas to life through code, and it's this passion that drives me every day. Continuously exploring and expanding my skills, I'm committed to staying at the cutting edge of web technologies.
         </p>
       </div>
     </section>
