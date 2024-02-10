@@ -18,13 +18,19 @@ const Contact = forwardRef((props, ref) => {
   });
 
   const [messageSubmitted, setMessageSubmitted] = useState(false);
+  const [formError, setFormError] = useState('');
 
   useEffect(() => {
     if (messageSubmitted) {
       const timer = setTimeout(() => setMessageSubmitted(false), 1500);
       return () => clearTimeout(timer);
     }
-  }, [messageSubmitted]);
+
+    if (formError) {
+      const timer = setTimeout(() => setFormError(''), 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [messageSubmitted, formError]);
 
   const validateForm = () => {
     const newValidation = { ...formValidation };
@@ -43,22 +49,6 @@ const Contact = forwardRef((props, ref) => {
     return isValid;
   };
 
-  const handleSubmit = event => {
-    event.preventDefault();
-
-    if (validateForm()) {
-      console.log(formData);
-      setMessageSubmitted(true);
-      setFormData({ name: '', number: '', email: '', message: '' });
-      setFormValidation({
-        name: { error: '', class: '' },
-        number: { error: '', class: '' },
-        email: { error: '', class: '' },
-        message: { error: '', class: '' },
-      });
-    }
-  };
-
   const handleChangeValue = event => {
     const { name, value } = event.target;
     setFormData(prevState => ({
@@ -67,11 +57,48 @@ const Contact = forwardRef((props, ref) => {
     }));
   };
 
+  const handleSubmit = async event => {
+    event.preventDefault();
+
+    if (validateForm()) {
+      const endpoint = '';
+      const formData = new FormData(event.currentTarget);
+
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+
+        if (response.ok) {
+          setFormError('');
+          setMessageSubmitted(true);
+          setFormData({ name: '', number: '', email: '', message: '' });
+          setFormValidation({
+            name: { error: '', class: '' },
+            number: { error: '', class: '' },
+            email: { error: '', class: '' },
+            message: { error: '', class: '' },
+          });
+        } else {
+          setFormError('Failed to send! Try again later.');
+        }
+      } catch (error) {
+        setFormError('Failed to send! Try again later.');
+      }
+    }
+  };
+
   return (
     <section ref={ref} className={styles.contact}>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit} method='POST'>
         <h2 className={styles.title}>Contact me</h2>
         <div className={styles.wrapper}>
+          {formError && <div className={styles.error}>{formError}</div>}
+          <input type='hidden' name='_gotcha' />
           <label htmlFor='name'>{formValidation.name.error}</label>
           <input
             id='name'
