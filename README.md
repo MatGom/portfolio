@@ -19,7 +19,7 @@ This portfolio website is a personal project developed by myself, showcasing my 
 
 ## Getting Started
 
-To explore the code and learn more about the project's tools and creation, please visit the GitHub repository by clicking the GitHub icon on the website, or navigate directly to the repository URL here: [http](https://github.com/MatGom/portfolio).
+To explore the code and learn more about the project's tools and creation, please visit the GitHub repository by clicking the GitHub icon on the website, or navigate directly to the repository URL here: [Portfolio](https://github.com/MatGom/portfolio).
 
 For more detailed information on the project's development process, tools used, and insights into the design choices, flip the card on the portfolio website.
 
