@@ -33,9 +33,18 @@
   align-items: center;
 }
 
+.wrapper label {
+  margin-left: 10px;
+  align-self: start;
+  height: 20px;
+  color: var(--color-five);
+}
+
+.wrapper label,
 .wrapper input,
 .wrapper textarea,
-.wrapper button {
+.wrapper button,
+.wrapper .success {
   font-family: var(--font-two);
 }
 
@@ -50,6 +59,14 @@
   background: var(--color-six);
   color: var(--color-three);
   outline: none;
+}
+
+.wrapper .invalid {
+  background: var(--color-five);
+}
+
+.wrapper .invalid::placeholder {
+  color: var(--color-three);
 }
 
 .wrapper input:focus,
@@ -86,6 +103,17 @@
   transition: 0.3s;
 }
 
+.wrapper .success {
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid transparent;
+  font-size: 28px;
+  background: var(--gradient-color-one);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .wrapper button:focus,
 .wrapper button:hover {
   background: var(--color-three);
@@ -118,7 +146,8 @@
     font-size: 18px;
   }
 
-  .wrapper button {
+  .wrapper button,
+  .wrapper .success {
     padding: 3px;
     font-size: 24px;
   }
@@ -137,8 +166,8 @@
 }
 
 @media (max-width: 510px) {
-  .wrapper button {
-    padding: 3px;
+  .wrapper button,
+  .wrapper .success {
     font-size: 22px;
   }
 }
@@ -167,8 +196,8 @@
     font-size: 16px;
   }
 
-  .wrapper button {
-    padding: 3px;
+  .wrapper button,
+  .wrapper .success {
     font-size: 20px;
   }
 }

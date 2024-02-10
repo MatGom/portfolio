@@ -1,4 +1,4 @@
-import { forwardRef, useState } from 'react';
+import { forwardRef, useEffect, useState } from 'react';
 
 import styles from './Contact.module.css';
 
@@ -10,16 +10,108 @@ const Contact = forwardRef((props, ref) => {
     message: '',
   });
 
+  const [formValidation, setFormValidation] = useState({
+    name: { error: '', class: '' },
+    number: { error: '', class: '' },
+    email: { error: '', class: '' },
+    message: { error: '', class: '' },
+  });
+
+  const [messageSubmitted, setMessageSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (messageSubmitted) {
+      const timer = setTimeout(() => setMessageSubmitted(false), 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [messageSubmitted]);
+
+  const validateForm = () => {
+    const newValidation = { ...formValidation };
+    let isValid = true;
+
+    Object.keys(formData).forEach(key => {
+      if (!formData[key].trim()) {
+        newValidation[key] = { error: `Enter ${key}`, class: styles.invalid };
+        isValid = false;
+      } else {
+        newValidation[key] = { error: '', class: '' };
+      }
+    });
+
+    setFormValidation(newValidation);
+    return isValid;
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    if (validateForm()) {
+      console.log(formData);
+      setMessageSubmitted(true);
+      setFormData({ name: '', number: '', email: '', message: '' });
+      setFormValidation({
+        name: { error: '', class: '' },
+        number: { error: '', class: '' },
+        email: { error: '', class: '' },
+        message: { error: '', class: '' },
+      });
+    }
+  };
+
+  const handleChangeValue = event => {
+    const { name, value } = event.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   return (
     <section ref={ref} className={styles.contact}>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <h2 className={styles.title}>Contact me</h2>
         <div className={styles.wrapper}>
-          <input placeholder='name and surname' />
-          <input placeholder='contact number' />
-          <input placeholder='e-mail' />
-          <textarea placeholder='write your message' />
-          <button>Send</button>
+          <label htmlFor='name'>{formValidation.name.error}</label>
+          <input
+            id='name'
+            type='text'
+            className={formValidation.name.class}
+            name='name'
+            placeholder='name and surname'
+            value={formData.name}
+            onChange={handleChangeValue}
+          />
+          <label htmlFor='number'>{formValidation.number.error}</label>
+          <input
+            id='number'
+            type='number'
+            className={formValidation.number.class}
+            name='number'
+            placeholder='contact number'
+            value={formData.number}
+            onChange={handleChangeValue}
+          />
+          <label htmlFor='email'>{formValidation.email.error}</label>
+          <input
+            id='email'
+            type='email'
+            className={formValidation.email.class}
+            name='email'
+            placeholder='e-mail'
+            value={formData.email}
+            onChange={handleChangeValue}
+          />
+          <label htmlFor='message'>{formValidation.message.error}</label>
+          <textarea
+            id='message'
+            className={formValidation.message.class}
+            name='message'
+            placeholder='write your message'
+            value={formData.message}
+            onChange={handleChangeValue}
+          />
+          {!messageSubmitted ? <button type='submit'>Send</button> : <p className={styles.success}>Message sent!</p>}
         </div>
       </form>
     </section>
