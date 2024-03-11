@@ -3,12 +3,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import projectOneImage from '../images/portfolio.png';
+import projectTwoImage from '../images/clashgame.png';
 
 export const projects = [
   {
     id: 'project1',
     image: projectOneImage,
-    imageDescription: '',
+    imageDescription: 'portfolio website',
     title: 'My Portfolio',
     description: (
       <span>
@@ -34,15 +35,26 @@ export const projects = [
   },
   {
     id: 'project2',
-    image: '',
-    imageDescription: '',
-    title: 'TBA',
-    description: <span>'Coming soon...'</span>,
+    image: projectTwoImage,
+    imageDescription: 'clash game website',
+    title: 'Clash Game',
+    description: (
+      <span>
+        Clash Game is a strategy turn based game for two players. This project was developed using React and SCSS. Check
+        out the project's code by clicking the GitHub icon. For details on its tools and creation, flip this card.
+      </span>
+    ),
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
-    backDescription: <span>'Coming soon...'</span>,
-    link: '',
-    githubLink: '',
+    backDescription: (
+      <span>
+        I designed, coded, and developed the game logic for Clash Game entirely on my own, utilizing useState for local
+        state management and React Redux for global state management. The game features <a href='https://fontawesome.com/'>Font Awesome</a>'s free icons to enhance
+        its visual appeal.
+      </span>
+    ),
+    link: 'https://riseclashgame.netlify.app/',
+    githubLink: 'https://github.com/MatGom/clash-game',
   },
   {
     id: 'project3',
