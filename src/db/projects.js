@@ -23,10 +23,10 @@ export const projects = [
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
     backDescription: (
       <span>
-        This portfolio is brought to life with the original designs and graphics by
+        This portfolio is brought to life with the original designs and graphics by{' '}
         <a href='https://www.instagram.com/nekoteknk/'>nekotekNK</a>, whose artistic contributions have been invaluable.
         The contact form submission is seamlessly managed thanks to <a href='https://formspree.io'>Formspree</a>,
-        ensuring every message reaches me directly. Additionally, the visual appeal is enhanced by the use of
+        ensuring every message reaches me directly. Additionally, the visual appeal is enhanced by the use of{' '}
         <a href='https://fontawesome.com/'>Font Awesome</a>'s free icons, adding that extra touch of clarity and
         engagement to the user experience.
       </span>
@@ -50,7 +50,7 @@ export const projects = [
     backDescription: (
       <span>
         I designed, coded, and developed the game logic for Clash Game entirely on my own, utilizing useState for local
-        state management and React Redux for global state management. The game features
+        state management and React Redux for global state management. The game features{' '}
         <a href='https://fontawesome.com/'>Font Awesome</a>'s free icons to enhance its visual appeal.
       </span>
     ),
@@ -74,8 +74,8 @@ export const projects = [
     backDescription: (
       <span>
         This project was designed and programmed by myself. It uses useState for managing local state and React Context
-        for managing global state. The application's look is improved with free icons from
-        <a href='https://fontawesome.com/'>Font Awesome</a>, and it uses the
+        for managing global state. The application's look is improved with free icons from{' '}
+        <a href='https://fontawesome.com/'>Font Awesome</a>, and it uses the{' '}
         <a href='https://openweathermap.org/api'>OpenWeather API</a> to fetch and display the user's local weather
         information.
       </span>
