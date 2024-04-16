@@ -61,7 +61,7 @@ const Contact = forwardRef((props, ref) => {
     event.preventDefault();
 
     if (validateForm()) {
-      const endpoint = '';
+      const endpoint = process.env.REACT_APP_FORM_URL;
       const formData = new FormData(event.currentTarget);
 
       try {
