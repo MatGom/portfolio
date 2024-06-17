@@ -5,6 +5,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import projectOneImage from '../images/portfolio.png';
 import projectTwoImage from '../images/clashgame.png';
 import projectThreeImage from '../images/calendar.png';
+import projectFourImage from '../images/thefastestfood.png';
 
 export const projects = [
   {
@@ -14,21 +15,27 @@ export const projects = [
     title: 'My Portfolio',
     description: (
       <span>
-        This is my portfolio website, developed by myself using React and plain CSS. I aimed for simplicity in the code,
-        emphasizing clean design and functionality. Check out the project's code by clicking the GitHub icon. For more
-        details, flip this card.
+        This is my portfolio website, developed using React and plain CSS, focusing on clean design and functionality.
+        Check out the code on GitHub by clicking the icon. For more details, flip this card.
       </span>
     ),
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
     backDescription: (
       <span>
-        This portfolio is brought to life with the original designs and graphics by{' '}
-        <a href='https://www.instagram.com/nekoteknk/'>nekotekNK</a>, whose artistic contributions have been invaluable.
-        The contact form submission is seamlessly managed thanks to <a href='https://formspree.io'>Formspree</a>,
-        ensuring every message reaches me directly. Additionally, the visual appeal is enhanced by the use of{' '}
-        <a href='https://fontawesome.com/'>Font Awesome</a>'s free icons, adding that extra touch of clarity and
-        engagement to the user experience.
+        The portfolio features original designs and graphics by{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/nekoteknk/'>
+          nekotekNK
+        </a>
+        . The contact form is powered by{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://formspree.io'>
+          Formspree
+        </a>
+        , and{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://fontawesome.com/'>
+          Font Awesome
+        </a>{' '}
+        icons enhance the visual appeal.
       </span>
     ),
     link: 'http://mateuszgomolka.com',
@@ -41,17 +48,20 @@ export const projects = [
     title: 'Clash Game',
     description: (
       <span>
-        Clash Game is a strategy turn based game for two players. This project was developed using React and SCSS. Check
-        out the project's code by clicking the GitHub icon. For more details, flip this card.
+        Clash Game is a two-player strategy game built with React and SCSS. Check out the code on GitHub by clicking the
+        icon. For more details, flip this card.
       </span>
     ),
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
     backDescription: (
       <span>
-        I designed, coded, and developed the game logic for Clash Game entirely on my own, utilizing useState for local
-        state management and React Redux for global state management. The game features{' '}
-        <a href='https://fontawesome.com/'>Font Awesome</a>'s free icons to enhance its visual appeal.
+        I developed Clash Game using React, useState for local state, and React Redux for global state. The game uses
+        free icons from{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://fontawesome.com/'>
+          Font Awesome
+        </a>
+        .
       </span>
     ),
     link: 'https://riseclashgame.netlify.app/',
@@ -64,20 +74,24 @@ export const projects = [
     title: 'Calendar Planner',
     description: (
       <span>
-        This interactive calendar app allows the user to plan activities or add notes for events and shows the current
-        local weather. This project was developed using React and plain CSS. Check out the project's code by clicking
-        the GitHub icon. For more details, flip this card.
+        This interactive calendar app allows users to plan activities and view the current local weather. Developed with
+        React and plain CSS. Check out the code on GitHub by clicking the icon. For more details, flip this card.
       </span>
     ),
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
     backDescription: (
       <span>
-        This project was designed and programmed by myself. It uses useState for managing local state and React Context
-        for managing global state. The application's look is improved with free icons from{' '}
-        <a href='https://fontawesome.com/'>Font Awesome</a>, and it uses the{' '}
-        <a href='https://openweathermap.org/api'>OpenWeather API</a> to fetch and display the user's local weather
-        information.
+        I developed this project using React, with useState for local state and React Context for global state. The app
+        features icons from{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://fontawesome.com/'>
+          Font Awesome
+        </a>{' '}
+        and uses the{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://openweathermap.org/api'>
+          OpenWeather API
+        </a>{' '}
+        for weather information.
       </span>
     ),
     link: 'https://risecalendar.netlify.app/',
@@ -85,14 +99,48 @@ export const projects = [
   },
   {
     id: 'project4',
-    image: '',
-    imageDescription: '',
-    title: 'TBA',
-    description: <span>'Coming soon...'</span>,
+    image: projectFourImage,
+    imageDescription: 'image of the fastest food page',
+    title: 'The Fastest Food',
+    description: (
+      <span>
+        This food ordering app is built with React, TypeScript, and plain CSS. Check out the code on GitHub by clicking
+        the icon. For more details, flip this card.
+      </span>
+    ),
     linkIcon: <FontAwesomeIcon icon={faGithub} />,
     arrowIcon: <FontAwesomeIcon icon={faChevronRight} />,
-    backDescription: <span>'Coming soon...'</span>,
-    link: '',
-    githubLink: '',
+    backDescription: (
+      <span>
+        Developed using React and TypeScript, this app uses useState for local state and React Context for global state.
+        The app features icons from{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://fontawesome.com/'>
+          Font Awesome
+        </a>{' '}
+        and images from{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://pixabay.com/'>
+          Pixabay
+        </a>
+        . Special thanks to Pixabay contributors:{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://pixabay.com/users/vika_glitter-6314823/'>
+          Vika_Glitter
+        </a>{' '}
+        for background images,{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://pixabay.com/users/alexas_fotos-686414/'>
+          Alexas_Fotos
+        </a>{' '}
+        for desserts and drinks images,{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://pixabay.com/users/jandersnunes-43519400/'>
+          JanderSNunes
+        </a>{' '}
+        for burger images, and{' '}
+        <a target='_blank' rel='noopener noreferrer' href='https://pixabay.com/users/colibrie-15745216/'>
+          Colibrie
+        </a>{' '}
+        for pizza images.
+      </span>
+    ),
+    link: 'https://risethefastestfood.netlify.app/',
+    githubLink: 'https://github.com/MatGom/the-fastest-food',
   },
 ];

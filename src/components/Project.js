@@ -38,10 +38,12 @@ const Project = ({
             <h3 className={styles.projectTitle}>{title}</h3>
             <p className={styles.projectDescription}>{description}</p>
             <div className={styles.projectButtonsWrapper}>
-              <a href={link} className={styles.projectButton}>
+              <a target='_blank' rel='noopener noreferrer' href={link} className={styles.projectButton}>
                 visit website
               </a>
-              <a href={githubLink}>{linkIcon}</a>
+              <a target='_blank' rel='noopener noreferrer' href={githubLink}>
+                {linkIcon}
+              </a>
             </div>
           </div>
           <div onClick={showBackHandler} className={styles.projectArrow}>
