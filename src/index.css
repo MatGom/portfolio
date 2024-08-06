@@ -1,6 +1,6 @@
 :root {
-  --color-one: #64e4ec;
-  --color-two: #241233;
+  --color-one: #ffffff;
+  --color-two: #00001e;
   --color-three: #23192a;
   --color-four: #fff;
   --color-five: #8882e7;
@@ -9,8 +9,8 @@
 
   --gradient-color-one: linear-gradient(180deg, var(--color-seven) 4.37%, #8882e7 31.96%, #64e4ec 60.98%);
 
-  --font-one: 'Gugi', sans-serif;
-  --font-two: 'Homenaje', sans-serif;
+  --font-one: 'Teko', sans-serif;
+  --font-two: 'Montserrat', sans-serif;
 }
 
 * {
@@ -22,6 +22,7 @@
 html,
 body {
   width: 100%;
+  background-color: white;
 }
 
 .container {

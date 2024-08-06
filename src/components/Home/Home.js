@@ -1,31 +1,21 @@
-import { forwardRef } from 'react';
+import { Link } from 'react-scroll';
 
 import styles from './Home.module.css';
 
-import headerImage from '../../images/header.svg';
-
-const Home = forwardRef((props, ref) => {
+const Home = function () {
   return (
-    <header ref={ref} className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.wrapper}>
-          <div className={styles.subtitles}>
-            <h2 className={styles.firstSubtitle}>Front-end</h2>
-            <h3 className={styles.secondSubtitle}>Web Developer</h3>
-          </div>
-          <div className={styles.image}>
-            <img src={headerImage} alt='Coding work station' />
-          </div>
-          <div className={styles.title}>
-            <h1>Mateusz Gomolka</h1>
-          </div>
-          <div className={styles.titleDecoration}>
-            <h1>Mateusz Gomolka</h1>
-          </div>
-        </div>
+    <header className={styles.home}>
+      <div className={styles.homeTitleWrapper}>
+        <h2 className={styles.homeSubtitle}>Front-End</h2>
+        <h2 className={styles.homeSubtitle}>Web Developer</h2>
+        <div className={styles.titleUnderline}></div>
+        <h1 className={styles.homeTitle}>Mateusz Gomolka's portfolio</h1>
+        <Link to='about' smooth={true} duration={500}>
+          <button className={styles.homeButton}>Read more</button>
+        </Link>
       </div>
     </header>
   );
-});
+};
 
 export default Home;

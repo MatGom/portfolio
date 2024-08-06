@@ -7,7 +7,7 @@ import { cards } from '../../db/cards';
 
 const About = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className={styles.about}>
+    <section id='about' ref={ref} className={styles.about}>
       <div className={styles.wrapper}>
         {cards.map(card => (
           <AboutCard
