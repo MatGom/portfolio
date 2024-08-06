@@ -1,8 +1,8 @@
-import { forwardRef, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './Contact.module.css';
 
-const Contact = forwardRef((props, ref) => {
+const Contact = function () {
   const [formData, setFormData] = useState({
     name: '',
     number: '',
@@ -93,9 +93,9 @@ const Contact = forwardRef((props, ref) => {
   };
 
   return (
-    <section id='contact' ref={ref} className={styles.contact}>
+    <section id='contact' className={styles.contact}>
       <form className={styles.form} onSubmit={handleSubmit} method='POST'>
-        <h2 className={styles.title}>Contact me</h2>
+        <h3 className='section-title'>Contact me</h3>
         <div className={styles.wrapper}>
           {formError && <div className={styles.error}>{formError}</div>}
           <input type='hidden' name='_gotcha' />
@@ -143,6 +143,6 @@ const Contact = forwardRef((props, ref) => {
       </form>
     </section>
   );
-});
+};
 
 export default Contact;

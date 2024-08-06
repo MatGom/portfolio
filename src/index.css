@@ -2,10 +2,6 @@
   --color-one: #ffffff;
   --color-two: #00001e;
   --color-three: #0087ff;
-  /*--color-four: #fff;
-  --color-five: #8882e7;
-  --color-six: #efefef;
-  --color-seven: #502eb0; */
 
   --gradient-color-one: linear-gradient(90deg, rgba(0, 0, 30, 1) 0%, rgba(5, 5, 60, 1) 50%, rgba(0, 0, 30, 1) 100%);
   --gradient-color-two: linear-gradient(

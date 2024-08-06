@@ -2,6 +2,7 @@
   width: 1200px;
   display: flex;
   justify-content: center;
+  background: var(--gradient-color-one);
 }
 
 .form {
@@ -9,20 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--color-three);
-}
-
-.title {
-  margin: 70px 0;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  font-family: var(--font-one);
-  background: var(--gradient-color-one);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
 }
 
 .wrapper {
@@ -53,9 +40,11 @@
 
 .wrapper label {
   margin-left: 10px;
+  margin-bottom: 10px;
   align-self: start;
+  font-weight: 500;
   height: 20px;
-  color: var(--color-five);
+  color: var(--color-three);
 }
 
 .wrapper label,
@@ -73,14 +62,13 @@
   padding: 10px;
   font-size: 20px;
   border-radius: 7px;
-  border: none;
-  background: var(--color-six);
-  color: var(--color-three);
+  border: 2px solid var(--color-three);
+  background-color: transparent;
   outline: none;
 }
 
 .wrapper .invalid {
-  background: var(--color-five);
+  box-shadow: 0 0 3px 3px var(--color-three);
 }
 
 .wrapper .invalid::placeholder {
@@ -89,13 +77,8 @@
 
 .wrapper input:focus,
 .wrapper textarea:focus {
-  box-shadow: 0 0 3px 3px var(--color-five);
-  background: var(--color-four);
-}
-
-.wrapper input:not(:placeholder-shown),
-.wrapper textarea:not(:placeholder-shown) {
-  background: var(--color-four);
+  border: 2px solid var(--color-one);
+  box-shadow: 0 0 3px 3px var(--color-one);
 }
 
 .wrapper input {
@@ -112,11 +95,13 @@
   width: 30%;
   margin: 10px;
   padding: 5px;
-  background: var(--color-five);
-  border: 3px solid var(--color-five);
-  border-radius: 7px;
-  color: var(--color-four);
-  font-size: 28px;
+  background: transparent;
+  text-transform: uppercase;
+  border: 2px solid var(--color-three);
+  border-radius: 30px;
+  color: var(--color-three);
+  font-size: 26px;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -126,7 +111,7 @@
   padding: 5px;
   border: 3px solid transparent;
   font-size: 28px;
-  background: var(--gradient-color-one);
+  background: var(--gradient-color-two);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -134,12 +119,18 @@
 
 .wrapper button:focus,
 .wrapper button:hover {
-  background: var(--color-three);
-  border: 3px solid var(--color-three);
-  box-shadow: 0 0 3px 3px var(--color-five);
-  color: var(--color-five);
+  background: var(--color-one);
+  border: 2px solid var(--color-one);
+  box-shadow: 0 0 3px 3px var(--color-one);
+  color: var(--color-two);
 }
 
+.wrapper input:not(:placeholder-shown),
+.wrapper textarea:not(:placeholder-shown) {
+  background: var(--color-one);
+}
+
+/*
 @media (max-width: 1230px) {
   .contact {
     width: 100%;
@@ -222,4 +213,4 @@
   .wrapper .success {
     font-size: 20px;
   }
-}
+} */
