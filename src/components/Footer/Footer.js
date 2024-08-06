@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 
-import { ReactComponent as Logo } from '../../images/logo_white_lines.svg';
+import { ReactComponent as Logo } from '../../images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.container}>
         <p className={styles.description}>
           <FontAwesomeIcon className={styles.copyright} icon={faCopyright} />
-          {new Date().getFullYear()} Mateusz Gomolka, front-end web developer. All rights reserved.
+          {new Date().getFullYear()} Mateusz Gomolka, front-end web developer. <span>All rights reserved.</span>
         </p>
         <Logo className={styles.logo} />
       </div>

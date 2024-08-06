@@ -1,30 +1,37 @@
 .footer {
   width: 100%;
   height: 80px;
-  background: var(--color-three);
+  background: var(--color-two);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid var(--color-three);
 }
 
 .container {
-  width: 100%;
+  height: 100%;
+  width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--gradient-color-one);
 }
 
 .copyright {
-  margin-right: 4px;
-  font-size: 24px;
-  color: var(--color-four);
+  margin-right: 6px;
+  font-size: 20px;
+  color: var(--color-three);
 }
 
 .description {
   margin-right: 20px;
-  font-size: 24px;
+  font-size: 22px;
   font-family: var(--font-two);
-  color: var(--color-four);
+  color: var(--color-one);
+}
+
+.description span {
+  color: var(--color-three);
 }
 
 .logo {
