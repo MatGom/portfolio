@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 
 const Home = function () {
   return (
-    <header className={styles.home}>
+    <header id='home' className={styles.home}>
       <div className={styles.homeTitleWrapper}>
         <h2 className={styles.homeSubtitle}>Front-End</h2>
         <h2 className={styles.homeSubtitle}>Web Developer</h2>

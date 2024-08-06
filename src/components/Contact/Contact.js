@@ -93,7 +93,7 @@ const Contact = forwardRef((props, ref) => {
   };
 
   return (
-    <section ref={ref} className={styles.contact}>
+    <section id='contact' ref={ref} className={styles.contact}>
       <form className={styles.form} onSubmit={handleSubmit} method='POST'>
         <h2 className={styles.title}>Contact me</h2>
         <div className={styles.wrapper}>

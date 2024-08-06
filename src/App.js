@@ -21,7 +21,7 @@ function App() {
   if (window.location.pathname === '/') {
     content = (
       <>
-        {/* <MainNavigation {...sectionRefs} /> */}
+        <MainNavigation {...sectionRefs} />
         <Home ref={sectionRefs.homeRef} />
         <About ref={sectionRefs.aboutRef} />
         <Projects ref={sectionRefs.projectsRef} />

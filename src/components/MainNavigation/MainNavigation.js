@@ -1,9 +1,11 @@
+import { Link } from 'react-scroll';
+
 import styles from './MainNavigation.module.css';
 import { ReactComponent as Logo } from '../../images/logo_black_lines.svg';
 
 import { useState } from 'react';
 
-const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
+const MainNavigation = function () {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   let navClasses;
@@ -30,20 +32,28 @@ const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
   };
 
   return (
-    <>
+    <div className={styles.navigationContainer}>
       <nav className={navClasses}>
         <ul className={styles.navList}>
-          <li className={styles.listItem} onClick={() => goToSectionHandler(homeRef)}>
-            Home
+          <li className={styles.listItem}>
+            <Link to='home' smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
-          <li className={styles.listItem} onClick={() => goToSectionHandler(aboutRef)}>
-            About
+          <li className={styles.listItem}>
+            <Link to='about' smooth={true} duration={500}>
+              About
+            </Link>
           </li>
-          <li className={styles.listItem} onClick={() => goToSectionHandler(projectsRef)}>
-            Projects
+          <li className={styles.listItem}>
+            <Link to='projects' smooth={true} duration={500}>
+              Projects
+            </Link>
           </li>
-          <li className={styles.listItem} onClick={() => goToSectionHandler(contactRef)}>
-            Contact
+          <li className={styles.listItem}>
+            <Link to='contact' smooth={true} duration={500}>
+              Contact
+            </Link>
           </li>
           <li className={`${styles.listItem} ${styles.logoContainer}`}>
             <Logo className={styles.logo} />
@@ -64,7 +74,7 @@ const MainNavigation = ({ homeRef, aboutRef, projectsRef, contactRef }) => {
           <div className={`${styles.burgerBar} ${styles.burgerBarThree}`}></div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

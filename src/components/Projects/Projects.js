@@ -6,7 +6,7 @@ import { forwardRef } from 'react';
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className={styles.projects}>
+    <section id='projects' ref={ref} className={styles.projects}>
       <div className={styles.projectsWrapper}>
         <h2 className={styles.title}>Projects</h2>
         {projects.map(project => (
