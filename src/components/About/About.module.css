@@ -13,7 +13,6 @@
   font-weight: 300;
   font-family: var(--font-one);
   text-align: center;
-
   background: var(--gradient-color-two);
   background-clip: text;
   -webkit-background-clip: text;

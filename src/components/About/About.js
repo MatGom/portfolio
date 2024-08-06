@@ -7,7 +7,7 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 const About = function () {
   return (
     <section id='about' className={styles.about}>
-      <h3 className={styles.aboutTitle}>About</h3>
+      <h3 className='section-title'>About</h3>
       <div className={styles.aboutInfo}>
         <p className={styles.aboutInfoText}>
           Hello! I'm Mateusz Gomolka, a self-taught frontend developer. I learned web development through self-study,

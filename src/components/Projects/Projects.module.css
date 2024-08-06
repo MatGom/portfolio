@@ -1,8 +1,11 @@
 .projects {
-  width: 100%;
+  padding-top: 70px;
+  width: 1200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  background: var(--color-three);
+  align-items: center;
+  background: var(--gradient-color-one);
 }
 
 .projectsWrapper {
