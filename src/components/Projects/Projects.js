@@ -1,7 +1,7 @@
 import styles from './Projects.module.css';
 
-import Project from './Project';
-import { projects } from '../db/projects';
+import Project from './Project/Project';
+import { projects } from '../../db/projects';
 import { forwardRef } from 'react';
 
 const Projects = forwardRef((props, ref) => {

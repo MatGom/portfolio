@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 
-import { ReactComponent as Logo } from '../images/logo_white_lines.svg';
+import { ReactComponent as Logo } from '../../images/logo_white_lines.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 

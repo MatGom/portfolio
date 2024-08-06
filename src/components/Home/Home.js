@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 
 import styles from './Home.module.css';
 
-import headerImage from '../images/header.svg';
+import headerImage from '../../images/header.svg';
 
 const Home = forwardRef((props, ref) => {
   return (

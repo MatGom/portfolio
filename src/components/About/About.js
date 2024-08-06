@@ -2,8 +2,8 @@ import { forwardRef } from 'react';
 
 import styles from './About.module.css';
 
-import AboutCard from './AboutCard';
-import { cards } from '../db/cards';
+import AboutCard from './AboutCard/AboutCard';
+import { cards } from '../../db/cards';
 
 const About = forwardRef((props, ref) => {
   return (

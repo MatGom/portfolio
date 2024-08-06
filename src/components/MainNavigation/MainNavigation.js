@@ -1,5 +1,5 @@
 import styles from './MainNavigation.module.css';
-import { ReactComponent as Logo } from '../images/logo_black_lines.svg';
+import { ReactComponent as Logo } from '../../images/logo_black_lines.svg';
 
 import { useState } from 'react';
 

@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 
-import MainNavigation from './components/MainNavigation';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import NotFound from './components/NotFound';
+import MainNavigation from './components/MainNavigation/MainNavigation';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   const sectionRefs = {
