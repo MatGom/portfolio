@@ -38,7 +38,7 @@
   font-size: 47px;
   font-weight: 300;
   font-family: var(--font-two);
-  color: #0087ff;
+  color: var(--color-three);
   text-align: center;
   text-transform: uppercase;
 }
@@ -63,7 +63,7 @@
 .skillIcon {
   width: 50px;
   height: 50px;
-  color: #0087ff;
+  color: var(--color-three);
 }
 
 .skillText {

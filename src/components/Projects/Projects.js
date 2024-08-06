@@ -6,8 +6,8 @@ import { projects } from '../../db/projects';
 const Projects = function () {
   return (
     <section id='projects' className={styles.projects}>
+      <h3 className='section-title'>Projects</h3>
       <div className={styles.projectsWrapper}>
-        <h3 className='section-title'>Projects</h3>
         {projects.map(project => (
           <Project
             key={project.id}
@@ -16,8 +16,6 @@ const Projects = function () {
             title={project.title}
             description={project.description}
             linkIcon={project.linkIcon}
-            arrowIcon={project.arrowIcon}
-            backDescription={project.backDescription}
             link={project.link}
             githubLink={project.githubLink}
           />
