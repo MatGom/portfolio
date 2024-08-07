@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.container}>
         <p className={styles.description}>
           <FontAwesomeIcon className={styles.copyright} icon={faCopyright} />
-          {new Date().getFullYear()} Mateusz Gomolka, front-end web developer. <span>All rights reserved.</span>
+          {new Date().getFullYear()} Mateusz Gomolka, front-end web developer.
         </p>
         <Logo className={styles.logo} />
       </div>

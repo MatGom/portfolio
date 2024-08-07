@@ -1,26 +1,26 @@
 .footer {
   width: 100%;
-  height: 80px;
   background: var(--color-two);
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 2px solid var(--color-three);
+  background: var(--gradient-color-one);
 }
 
 .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 100%;
   width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--gradient-color-one);
 }
 
 .copyright {
   margin-right: 6px;
   font-size: 20px;
-  color: var(--color-three);
 }
 
 .description {
@@ -38,13 +38,17 @@
   height: 40px;
 }
 
-@media (max-width: 830px) {
-  .copyright {
-    font-size: 22px;
+@media (max-width: 1080px) {
+  .container {
+    width: 90%;
   }
 
   .description {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .copyright {
+    font-size: 20px;
   }
 
   .logo {
@@ -52,16 +56,12 @@
   }
 }
 
-@media (max-width: 660px) {
-  .container {
-    width: 80%;
-  }
-
-  .copyright {
+@media (max-width: 980px) {
+  .description {
     font-size: 18px;
   }
 
-  .description {
+  .copyright {
     font-size: 18px;
   }
 
@@ -70,82 +70,45 @@
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 880px) {
   .footer {
-    height: 120px;
+    border-top: none;
   }
 
   .container {
-    width: 80%;
-    height: 100%;
     flex-direction: column-reverse;
   }
 
   .copyright {
+    font-size: 18px;
+  }
+
+  .description {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 760px) {
+  .copyright {
     font-size: 16px;
   }
 
   .description {
-    margin-right: 0;
     font-size: 16px;
   }
 
   .logo {
-    margin: 20px;
+    height: 30px;
   }
 }
 
-@media (max-width: 500px) {
-  .copyright {
-    font-size: 14px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
-  .logo {
-    height: 26px;
-  }
-}
-
-@media (max-width: 440px) {
-  .copyright {
-    font-size: 12px;
-  }
-
-  .description {
-    font-size: 12px;
-  }
-
-  .logo {
-    height: 24px;
-  }
-}
-
-@media (max-width: 380px) {
-  .container {
-    width: 90%;
-  }
-
-  .copyright {
-    font-size: 12px;
-  }
-
-  .description {
-    font-size: 12px;
-  }
-
-  .logo {
-    height: 24px;
-  }
-}
-
-@media (max-width: 350px) {
-  .container {
-    width: 95%;
-  }
-
+@media (max-width: 520px) {
   .copyright {
     font-size: 10px;
   }
@@ -155,6 +118,6 @@
   }
 
   .logo {
-    height: 22px;
+    height: 24px;
   }
 }
