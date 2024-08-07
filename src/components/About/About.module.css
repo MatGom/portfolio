@@ -10,7 +10,8 @@
 }
 
 .aboutInfo {
-  padding: 50px;
+  width: 65%;
+  padding: 20px;
 }
 
 .aboutInfoText {
@@ -36,8 +37,9 @@
   margin-bottom: 50px;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   opacity: 0;
   transform: translateX(100%);
   transition: transform 1s ease-out, opacity 0.8s ease-out;
@@ -49,6 +51,7 @@
 }
 
 .skill {
+  margin-bottom: 20px;
   height: 100px;
   width: 100px;
   display: flex;
@@ -101,10 +104,15 @@
   .about {
     width: 100%;
   }
+}
 
-  .aboutInfo {
-    padding-left: 200px;
-    padding-right: 200px;
+@media (max-width: 1080px) {
+  .aboutInfoText {
+    font-size: 22px;
+  }
+
+  .goalsListItem {
+    font-size: 22px;
   }
 }
 
@@ -119,7 +127,7 @@
   }
 
   .aboutInfoText {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .skillText {
@@ -127,24 +135,34 @@
   }
 
   .goalsListItem {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 570px) {
+  .skillsWrapper {
+    margin-bottom: 10px;
+  }
+
   .aboutSubtitle {
     font-size: 32px;
   }
 
+  .aboutInfo {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
   .aboutInfoText {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .skillText {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .goalsListItem {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
