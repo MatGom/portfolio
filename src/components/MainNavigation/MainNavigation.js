@@ -22,11 +22,6 @@ const MainNavigation = function () {
     burgerNavigationClasses = `${styles.burgerNavigation}`;
   }
 
-  const goToSectionHandler = ref => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
-    setMenuIsOpen(!menuIsOpen);
-  };
-
   const toggleMenuHandler = () => {
     setMenuIsOpen(!menuIsOpen);
   };
@@ -36,22 +31,22 @@ const MainNavigation = function () {
       <nav className={navClasses}>
         <ul className={styles.navList}>
           <li className={styles.listItem}>
-            <Link to='home' smooth={true} duration={500}>
+            <Link to='home' smooth={true} duration={500} onClick={toggleMenuHandler}>
               Home
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link to='about' smooth={true} duration={500}>
+            <Link to='about' smooth={true} duration={500} onClick={toggleMenuHandler}>
               About
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link to='projects' smooth={true} duration={500}>
+            <Link to='projects' smooth={true} duration={500} onClick={toggleMenuHandler}>
               Projects
             </Link>
           </li>
           <li className={styles.listItem}>
-            <Link to='contact' smooth={true} duration={500}>
+            <Link to='contact' smooth={true} duration={500} onClick={toggleMenuHandler}>
               Contact
             </Link>
           </li>
