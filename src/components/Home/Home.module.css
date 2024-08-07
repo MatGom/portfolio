@@ -13,13 +13,13 @@
 }
 
 .homeTitleWrapper {
-  margin-left: 50px;
+  margin-left: 120px;
   display: flex;
   flex-direction: column;
 }
 
 .homeSubtitle {
-  font-size: 150px;
+  font-size: 120px;
   font-family: var(--font-one);
   font-weight: 300;
   line-height: 1;
@@ -28,16 +28,16 @@
 }
 
 .titleUnderline {
-  height: 3px;
   margin-top: 20px;
   margin-bottom: 40px;
+  height: 3px;
   background-color: var(--color-one);
   border-radius: 5px;
 }
 
 .homeTitle {
   margin-bottom: 50px;
-  font-size: 47px;
+  font-size: 40px;
   font-weight: 300;
   font-family: var(--font-two);
   color: var(--color-one);
@@ -50,7 +50,7 @@ a {
 .homeButton {
   margin: 0 auto;
   padding: 8px 36px 3px 36px;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 300;
   font-family: var(--font-one);
   text-transform: uppercase;
@@ -65,4 +65,68 @@ a {
 .homeButton:hover {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   text-shadow: 1px 1px 2px var(--color-two);
+}
+
+@media (max-width: 1250px) {
+  .homeTitleWrapper {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .homeSubtitle {
+    font-size: 100px;
+  }
+
+  .homeTitle {
+    font-size: 30px;
+  }
+
+  .homeButton {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 790px) {
+  .home {
+    justify-content: center;
+  }
+
+  .homeTitleWrapper {
+    margin-left: 0;
+  }
+
+  .homeSubtitle {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .titleUnderline {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .homeTitle {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .homeButton {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 570px) {
+  .homeSubtitle {
+    font-size: 60px;
+  }
+
+  .homeTitle {
+    font-size: 22px;
+  }
+
+  .homeButton {
+    font-size: 22px;
+  }
 }
