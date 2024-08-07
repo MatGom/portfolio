@@ -24,6 +24,10 @@
 html,
 body {
   width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   background-color: var(--color-two);
 }
 
@@ -36,7 +40,7 @@ body {
 }
 
 .section-title {
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 300;
   font-family: var(--font-one);
   text-align: center;
@@ -45,4 +49,22 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+}
+
+@media (max-width: 1080px) {
+  .section-title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 790px) {
+  .section-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 570px) {
+  .section-title {
+    font-size: 60px;
+  }
 }

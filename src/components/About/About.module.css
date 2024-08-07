@@ -8,24 +8,12 @@
   background: var(--gradient-color-one);
 }
 
-.aboutTitle {
-  font-size: 150px;
-  font-weight: 300;
-  font-family: var(--font-one);
-  text-align: center;
-  background: var(--gradient-color-two);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-}
-
 .aboutInfo {
   padding: 50px;
 }
 
 .aboutInfoText {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 300;
   font-family: var(--font-two);
   color: var(--color-one);
@@ -33,9 +21,9 @@
 }
 
 .aboutSubtitle {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 30px;
-  font-size: 47px;
+  font-size: 44px;
   font-weight: 300;
   font-family: var(--font-two);
   color: var(--color-three);
@@ -67,22 +55,72 @@
 }
 
 .skillText {
+  font-size: 18px;
   font-family: var(--font-two);
   color: var(--color-one);
-}
-
-.goalsWrapper {
 }
 
 .goalsList {
-  font-size: 30px;
-  font-weight: 300;
-  font-family: var(--font-two);
-  color: var(--color-one);
   list-style: none;
 }
 
 .goalsListItem {
   display: flex;
   align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: var(--font-two);
+  color: var(--color-one);
+}
+
+@media (max-width: 1200px) {
+  .about {
+    width: 100%;
+  }
+
+  .aboutInfo {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 790px) {
+  .aboutSubtitle {
+    font-size: 40px;
+  }
+
+  .aboutInfo {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .aboutInfoText {
+    font-size: 22px;
+  }
+
+  .skillText {
+    font-size: 16px;
+  }
+
+  .goalsListItem {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 570px) {
+  .aboutSubtitle {
+    font-size: 32px;
+  }
+
+  .aboutInfoText {
+    font-size: 20px;
+  }
+
+  .skillText {
+    font-size: 16px;
+  }
+
+  .goalsListItem {
+    font-size: 20px;
+  }
 }

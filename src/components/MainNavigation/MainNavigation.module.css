@@ -184,7 +184,7 @@
   transform: translateY(-14px) rotate(135deg);
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .navigationContainer {
     justify-content: center;
   }

@@ -11,7 +11,7 @@ const About = function () {
       <div className={styles.aboutInfo}>
         <p className={styles.aboutInfoText}>
           Hello! I'm Mateusz Gomolka, a self-taught frontend developer. I learned web development through self-study,
-          online courses, and bootcamps. <br />I love turning ideas into reality with code. I'm always learning and
+          online courses, and bootcamps. I love turning ideas into reality with code. I'm always learning and
           keeping up with the latest web technologies.
         </p>
       </div>
@@ -55,11 +55,15 @@ const About = function () {
           </li>
           <li className={styles.goalsListItem}>
             <FontAwesomeIcon icon={faCaretRight} className={styles.skillIcon} />
+            Learn React Native
+          </li>
+          <li className={styles.goalsListItem}>
+            <FontAwesomeIcon icon={faCaretRight} className={styles.skillIcon} />
             Learn Angular
           </li>
           <li className={styles.goalsListItem}>
             <FontAwesomeIcon icon={faCaretRight} className={styles.skillIcon} />
-            Learn React Native
+            Learn Node
           </li>
         </ul>
       </div>
