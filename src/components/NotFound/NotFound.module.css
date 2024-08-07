@@ -4,20 +4,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-three);
+  background: var(--color-two);
 }
 
 .container {
+  width: 1200px;
   height: 30%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  background: var(--gradient-color-one);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .container p {
   font-family: var(--font-one);
-  background: linear-gradient(#502eb0 22.02%, var(--color-one) 44.61%);
+  background: var(--gradient-color-two);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,7 +50,7 @@
   .container p:nth-child(1) {
     font-size: 42px;
   }
-  
+
   .container p:nth-child(2) {
     font-size: 30px;
   }

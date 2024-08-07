@@ -14,9 +14,11 @@ const NotFound = () => {
   return (
     <div className={styles.notFound}>
       <div className={styles.container}>
-        <p>404</p>
-        <p>Page not found</p>
-        <p>Redirecting...</p>
+        <div className={styles.wrapper}>
+          <p>404</p>
+          <p>Page not found</p>
+          <p>Redirecting...</p>
+        </div>
       </div>
     </div>
   );
