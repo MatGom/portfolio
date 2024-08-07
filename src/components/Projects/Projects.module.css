@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   background: var(--gradient-color-one);
+  overflow: hidden;
 }
 
 .projectsWrapper {
@@ -13,7 +14,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 50px
+  gap: 50px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+
+.projectsWrapper.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1200px) {
