@@ -130,16 +130,14 @@
   background: var(--color-one);
 }
 
-/*
-@media (max-width: 1230px) {
+
+@media (max-width: 1200px) {
   .contact {
     width: 100%;
   }
-}
 
-@media (max-width: 990px) {
-  .title {
-    font-size: 48px;
+  .form {
+    width: 80%;
   }
 }
 
@@ -162,12 +160,6 @@
   }
 }
 
-@media (max-width: 660px) {
-  .title {
-    font-size: 42px;
-  }
-}
-
 @media (max-width: 590px) {
   .wrapper {
     padding-bottom: 0;
@@ -184,10 +176,6 @@
 @media (max-width: 450px) {
   .wrapper .error {
     font-size: 22px;
-  }
-
-  .title {
-    font-size: 34px;
   }
 }
 
@@ -213,4 +201,4 @@
   .wrapper .success {
     font-size: 20px;
   }
-} */
+}
