@@ -210,11 +210,13 @@
     from {
       opacity: 0;
       visibility: hidden;
+      height: 0vh;
     }
 
     to {
       opacity: 1;
       visibility: visible;
+      height: 100vh;
     }
   }
 
@@ -222,22 +224,23 @@
     from {
       opacity: 1;
       visibility: visible;
+      height: 100vh;
     }
 
     to {
       opacity: 0;
       visibility: hidden;
+      height: 0vh;
     }
   }
 
   .navigationContainer {
     top: 0;
     left: 0;
-    height: 100vh;
+    height: auto;
   }
 
   .navigation {
-    height: 100vh;
     animation: showNavigation 0.3s both ease-in-out;
   }
 
