@@ -1,8 +1,6 @@
 .project {
   padding: 26px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
   width: 450px;
   height: 700px;
   display: flex;
@@ -10,13 +8,8 @@
   justify-content: space-between;
   font-family: var(--font-two);
   border: 2px solid var(--color-two);
-  box-shadow: 0 0 15px var(--color-three);
   background: var(--gradient-color-one);
   transition: 0.2s;
-}
-
-.project:hover {
-  transform: scale(1.03);
 }
 
 .projectTitle {
@@ -189,7 +182,7 @@
     height: 38px;
     width: 90px;
   }
-  
+
   .projectGithubLink {
     font-size: 38px;
   }

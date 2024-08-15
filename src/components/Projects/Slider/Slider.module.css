@@ -1,0 +1,106 @@
+.slider {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.55s ease, z-index 0.55s ease;
+  cursor: pointer;
+}
+
+.activeSlide {
+  box-shadow: 0 0 20px var(--color-three);
+  opacity: 1;
+}
+
+.activeSlide:hover {
+  transform: translateX(-50%) scale(1.03);
+}
+
+.leftSlide {
+  box-shadow: 0 0 20px var(--color-one);
+  transform: translate3d(-110%, 0, -250px);
+  opacity: .1;
+}
+
+.leftSlide:hover {
+  transform: translate3d(-110%, 0, -250px) scale(1.03);
+}
+
+.rightSlide {
+  box-shadow: 0 0 20px var(--color-one);
+  transform: translate3d(10%, 0, -250px);
+  opacity: .1;
+}
+
+.rightSlide:hover {
+  transform: translate3d(10%, 0, -250px) scale(1.03);
+}
+
+.hiddenSlide {
+  transform: translate3d(-50%, 0, -250px);
+  opacity: 0;
+}
+
+.bars {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bars label {
+  width: 36px;
+  height: 7px;
+  cursor: pointer;
+  background-color: var(--color-one);
+  transition: 0.3s;
+}
+
+.bars label.active {
+  background-color: var(--color-three);
+}
+
+.arrowRight,
+.arrowLeft {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  color: var(--color-one);
+  transition: 0.3s;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.arrowRight {
+  right: 80px;
+}
+
+.arrowLeft {
+  left: 80px;
+}
+
+.arrowRight:hover,
+.arrowLeft:hover {
+  color: var(--color-three);
+}

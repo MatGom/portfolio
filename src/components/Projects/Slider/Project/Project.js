@@ -1,15 +1,6 @@
 import styles from './Project.module.css';
 
-const Project = function ({
-  image,
-  imageDescription,
-  title,
-  description,
-  linkIcon,
-  link,
-  githubLink,
-}) {
-
+const Project = function ({ image, imageDescription, title, description, linkIcon, link, githubLink }) {
   return (
     <div className={styles.project}>
       <h3 className={styles.projectTitle}>{title}</h3>

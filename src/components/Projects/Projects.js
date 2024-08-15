@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
 import styles from './Projects.module.css';
 
-import Project from './Project/Project';
-import { projects } from '../../db/projects';
+import { useEffect, useRef } from 'react';
+
+import Slider from './Slider/Slider';
 
 const Projects = function () {
   const projectsWrapperRef = useRef(null);
@@ -35,18 +35,7 @@ const Projects = function () {
     <section id='projects' className={styles.projects}>
       <h3 className='section-title'>Projects</h3>
       <div ref={projectsWrapperRef} className={styles.projectsWrapper}>
-        {projects.map(project => (
-          <Project
-            key={project.id}
-            image={project.image}
-            imageDescription={project.imageDescription}
-            title={project.title}
-            description={project.description}
-            linkIcon={project.linkIcon}
-            link={project.link}
-            githubLink={project.githubLink}
-          />
-        ))}
+        <Slider />
       </div>
     </section>
   );
